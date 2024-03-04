@@ -5,6 +5,8 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=aykanugur" alt="aykanugur" /></a> </p>
 
+![snake gif](https://github.com/aykanugur/aykanugur/blob/output/github-contribution-grid-snake.gif)
+
 - 🔭 I’m currently working on **WindMill project**
 
 - 🌱 I’m currently learning **Java and C#**
