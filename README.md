@@ -15,9 +15,9 @@
 
 - 🤝 I’m looking for help with **Java**
 
-- 👨‍💻 All of my projects are available at [In my Profile](In my Profile)
+- 👨‍💻 All of my projects are available at In my Profile
 
-- 💬 Ask me about **Everything about unity and C#**
+- 💬 Ask me about **Everything about unity , python and C#**
 
 - 📫 How to reach me **aykanugur157@gmail.com**
 
