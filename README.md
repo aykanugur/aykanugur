@@ -7,21 +7,21 @@
 
 ![snake gif](https://github.com/aykanugur/aykanugur/blob/output/github-contribution-grid-snake.gif)
 
-- 🔭 I’m currently working on **WindMill project**
+- 🔭 I’m currently working on **AykanLLM1.3B**
 
-- 🌱 I’m currently learning **Java and C#**
+- 🌱 I’m currently learning **NLM**
 
-- 👯 I’m looking to collaborate on **Unity Game Dev.**
+- 👯 I’m looking to collaborate on **NLM projects**
 
-- 🤝 I’m looking for help with **Java**
+- 🤝 I’m looking for help with **Training LLM**
 
-- 👨‍💻 All of my projects are available at In my Profile
+- 👨‍💻 All of my projects are available at In my Profile (not private ones lol)
 
-- 💬 Ask me about **Everything about unity , python and C#**
+- 💬 Ask me about **Everything about unity , python , java , NLM's and C#**
 
 - 📫 How to reach me **aykanugur157@gmail.com**
 
-- ⚡ Fun fact **I worked in Summer Camp XD**
+- ⚡ Fun fact **I worked in Summer Camp XD (2 times)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
