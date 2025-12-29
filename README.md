@@ -1,11 +1,19 @@
 <h1 align="center">Hi 👋, I'm Aykan Uğur</h1>
 <h3 align="center">A passionate developer from Turkey</h3>
+<img src="https://readme-typing-svg.demolab.com/demo/?color=F70F0F&lines=NLP;ML;Undergraduate+Assistant" alt="Typing SVG" />
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aykanugur&label=Profile%20views&color=0e75b6&style=flat" alt="aykanugur" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=aykanugur" alt="aykanugur" /></a> </p>
 
-![snake gif](https://github.com/aykanugur/aykanugur/blob/output/github-contribution-grid-snake.gif)
+## 💼 Professional Background
+
+```yaml
+Company: İzmir Ekonomi üniversitesi
+Position: Undergraduate Assistant
+Focus: Teaching
+Status: Working - but looking for job. 
+```
 
 - 🔭 I’m currently working on **AykanLLM1.3B**
 
