@@ -3,7 +3,6 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70F0F&center=true&width=435&lines=NLP;ML;Undergraduate+Assistant" alt="Typing SVG" />
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aykanugur&label=Profile%20views&color=0e75b6&style=flat" alt="aykanugur" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=aykanugur" alt="aykanugur" /></a> </p>
 
 ## 💼 Professional Background
 
