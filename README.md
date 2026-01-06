@@ -10,14 +10,14 @@ Position: Undergraduate Assistant
 Focus: Teaching
 Status: Working - but looking for job. 
 ```
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=aykanugur&label=Profile%20views&color=0e75b6&style=flat" alt="aykanugur" /> </p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70F0F&center=true&vCenter=true&width=435&lines=NLP;ML;Undergraduate+Assistant" alt="Typing SVG" />
 </p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=aykanugur&label=Profile%20views&color=0e75b6&style=flat" alt="aykanugur" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=aykanugur" alt="aykanugur" /></a> </p>
+![Aykan's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=aykanugur&theme=radical)
 
 - 🔭 I’m currently working on **AykanLLM1.3B**
 
