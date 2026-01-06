@@ -1,4 +1,7 @@
-<h1 align="center">Hi 👋, I'm Aykan Uğur</h1> <h3 align="center">A passionate developer from Turkey</h3> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70F0F&center=true&width=435&lines=NLP;ML;Undergraduate+Assistant" alt="Typing SVG" /> <p align="left"> <img src="https://komarev.com/ghpvc/?username=aykanugur&label=Profile%20views&color=0e75b6&style=flat" alt="aykanugur" /> </p> ## 💼 Professional Background ```yaml Company: İzmir Ekonomi üniversitesi Position: Undergraduate Assistant Focus: Teaching Status: Working - but looking for job. ```
+
+
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70F0F&center=true&vCenter=true&width=435&lines=NLP;ML;Undergraduate+Assistant" alt="Typing SVG" />
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aykanugur&label=Profile%20views&color=0e75b6&style=flat" alt="aykanugur" /> </p>
 
