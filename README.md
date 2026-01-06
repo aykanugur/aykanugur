@@ -20,7 +20,7 @@ Status: Working - but looking for job.
 
 - 👯 I’m looking to collaborate on **NLM**
 
-- 👨‍💻 All of my projects are available at [In my Profile (not private ones lol)](In my Profile (not private ones lol))
+- 👨‍💻 All of my projects are available at (In my Profile (not private ones lol))
 
 - 📫 How to reach me **aykanugur157@gmail.com**
 
