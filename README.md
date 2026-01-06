@@ -17,7 +17,9 @@ Status: Working - but looking for job.
 </p>
 
 
-![Aykan's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=aykanugur&theme=radical)
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aykanugur&theme=dark&ring=F70F0F&fire=F70F0F&currStreakNum=F70F0F&sideNums=F70F0F&currStreakLabel=F70F0F" alt="Aykan GitHub Streak" />
+</p>
 
 - 🔭 I’m currently working on **AykanLLM1.3B**
 
