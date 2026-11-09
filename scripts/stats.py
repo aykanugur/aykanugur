@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = Path(sys.argv[1] if len(sys.argv) > 1 else "dist/stats.svg")
 
 W = 846
-PAPER, INK, INK2, RULE, OX = "#f3ecdc", "#231f1a", "#5c5547", "#cbbf9f", "#7a2331"
+PAPER, INK, INK2, RULE, OX = "#f3ecdc", "#231f1a", "#4d4739", "#cbbf9f", "#7a2331"
 FALLBACK = "'EB Garamond',Garamond,'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
 ROM = f"AURoman,{FALLBACK}"
 ITA = f"AUItalic,{FALLBACK}"

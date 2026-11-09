@@ -6,7 +6,7 @@ rule frame, EB Garamond (small capitals, old-style figures), oxblood ink.
 Each SVG embeds an exact glyph subset of the font as a woff2 data URI, so it
 renders the same everywhere and never depends on a third-party host.
 
-Usage:  python build_assets.py <fonts-src-dir> <out-dir>
+Usage:  python build_assets.py <fonts-src-dir> <out-dir>   (pages go to <out-dir>/pages)
 Needs:  pip install fonttools brotli
 Font:   EB Garamond (SIL OFL), see assets/fonts/README.md
 """
@@ -23,7 +23,7 @@ SRC, OUT = Path(sys.argv[1]), Path(sys.argv[2])
 OUT.mkdir(parents=True, exist_ok=True)
 
 W = 846  # GitHub's README column on desktop, so the page is not rescaled
-PAPER, INK, INK2, RULE, OX = "#f3ecdc", "#231f1a", "#5c5547", "#cbbf9f", "#7a2331"
+PAPER, INK, INK2, RULE, OX = "#f3ecdc", "#231f1a", "#4d4739", "#cbbf9f", "#7a2331"
 FALLBACK = "'EB Garamond',Garamond,'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif"
 FEATURES = ["kern", "liga", "smcp", "c2sc", "onum", "lnum", "swsh", "case", "locl", "ccmp", "mark", "mkmk"]
 
@@ -90,19 +90,24 @@ class Doc:
             x += tracking / 2  # letter-spacing trails the last glyph
         self.add(f'<text x="{x:.1f}" y="{y:.1f}" {self._attrs(face, size, fill, anchor, tracking, cls)}>{esc(s)}</text>')
 
-    def rich(self, face, x, y, parts, size, anchor="middle", cls=""):
+    def rich(self, face, x, y, parts, size, anchor="middle", cls="", tracking=0):
         spans = ""
         for s, fill in parts:
             self.used[face].update(s)
             spans += f'<tspan fill="{fill}">{esc(s)}</tspan>'
-        self.add(f'<text x="{x:.1f}" y="{y:.1f}" {self._attrs(face, size, INK, anchor, 0, cls)}>{spans}</text>')
+        if anchor == "middle" and tracking:
+            x += tracking / 2
+        self.add(f'<text x="{x:.1f}" y="{y:.1f}" {self._attrs(face, size, INK, anchor, tracking, cls)}>{spans}</text>')
 
-    def render(self):
-        h = self.h
-        faces = "".join(
+    def font_faces(self):
+        return "".join(
             f"@font-face{{font-family:{FACES[k].family};src:url(data:font/woff2;base64,{FACES[k].woff2_b64(c)}) format('woff2')}}"
             for k, c in self.used.items() if c
         )
+
+    def render(self):
+        h = self.h
+        faces = self.font_faces()
         css = ("text{font-variant-numeric:lining-nums}.on{font-variant-numeric:oldstyle-nums}.sc{font-variant-caps:all-small-caps}"
                ".sw{font-feature-settings:'swsh','kern'}")
         yt, yb = (10 if self.top else -3), (h - 10 if self.bottom else h + 3)
@@ -131,7 +136,8 @@ class Doc:
 
     def save(self, name):
         svg = self.render()
-        (OUT / name).write_text(svg, encoding="utf-8")
+        (OUT / "pages").mkdir(exist_ok=True)
+        (OUT / "pages" / name).write_text(svg, encoding="utf-8")
         print(f"{name:22s} {len(svg)/1024:6.1f} KB  h={self.h}")
 
 
@@ -168,17 +174,17 @@ def leader(d, x1, x2, y):
 
 # ================================================================== TITLE
 def title():
-    d = Doc(404, "Aykan Uğur, I build language models",
+    d = Doc(342, "Aykan Uğur, I build language models",
             "Title page. Aykan Uğur. I build language models. Natural language processing, machine learning, Turkish AI. "
             "İzmir, Turkey. Open to work.", top=True)
     cx = W / 2
-    d.text("rom", cx, 76, "Natural language processing  ·  Machine learning  ·  Turkish AI", 14, INK2, "middle", 3.2, "sc")
-    sep(d, 112)
-    d.text("rom", cx, 206, "AYKAN UĞUR", 66, INK, "middle", 10)
-    d.rich("ita", cx, 258, [("I build ", INK2), ("language models.", OX)], 31)
-    sep(d, 300)
-    d.text("rom", cx, 342, "İzmir  ·  Turkey", 14, INK, "middle", 4, "sc")
-    d.text("ita", cx, 368, "38° 25′ N,  27° 08′ E", 15, INK2, "middle", cls="on")
+    d.text("rom", cx, 62, "Natural language processing  ·  Machine learning  ·  Turkish AI", 14.5, INK2, "middle", 3.2, "sc")
+    sep(d, 92)
+    d.text("rom", cx, 176, "AYKAN UĞUR", 66, INK, "middle", 10)
+    d.rich("ita", cx, 224, [("I build ", INK2), ("language models.", OX)], 32)
+    sep(d, 260)
+    d.rich("rom", cx, 298, [("İzmir  ·  Turkey   ·   ", INK), ("Open to work", OX)], 15.5, cls="sc", tracking=4)
+    d.text("ita", cx, 322, "38° 25′ N,  27° 08′ E", 15, INK2, "middle", cls="on")
     d.save("title.svg")
 
 
@@ -200,7 +206,7 @@ def particulars():
     VW = W - 64 - VX
     laid, y = [], 118
     for label, value, color in rows:
-        lines = wrap("rom", value, 18, VW)
+        lines = wrap("rom", value, 19, VW)
         laid.append((y, label, lines, color))
         y += 24 * len(lines) + 12
     h = y + 20
@@ -209,10 +215,10 @@ def particulars():
     sep(d, 36)
     heading(d, 76, "Particulars")
     for y, label, lines, color in laid:
-        d.text("ita", LX, y, label, 17.5, INK2)
-        leader(d, LX + FACES["ita"].width(label, 17.5) + 9, VX - 12, y - 4)
+        d.text("ita", LX, y, label, 18.5, INK2)
+        leader(d, LX + FACES["ita"].width(label, 18.5) + 9, VX - 12, y - 4)
         for i, ln in enumerate(lines):
-            d.text("rom", VX, y + 24 * i, ln, 18, color)
+            d.text("rom", VX, y + 24 * i, ln, 19, color)
     d.save("particulars.svg")
 
 
@@ -240,28 +246,28 @@ WORK = [
 
 
 def works():
-    d = Doc(148, "Selected works", "Selected works. Each entry links to its repository.")
-    sep(d, 36)
-    heading(d, 76, "Selected Works")
-    d.text("ita", W / 2, 108, "Six projects. Each entry opens its repository.", 16, INK2, "middle")
+    d = Doc(104, "Selected works", "Selected works. Each entry links to its repository.")
+    sep(d, 30)
+    heading(d, 70, "Selected Works")
     d.save("works-head.svg")
 
     for w in WORK:
-        lines = wrap("ita", w["desc"], 16.5, W - 128)
+        lines = wrap("ita", w["desc"], 18, W - 128)
         y_title = 40
-        y_desc = y_title + 32
-        y_tags = y_desc + 22 * len(lines) + 10
-        h = y_tags + 30
+        y_desc = y_title + 34
+        y_tags = y_desc + 24 * len(lines) + 12
+        h = y_tags + 32
         tags = "  ·  ".join(w["tags"])
         d = Doc(h, f"{w['title']} ({w['repo']})",
                 f"{w['title']}, repository {w['repo']}. {w['desc']} {', '.join(w['tags'])}.")
-        d.text("rom", 64, y_title, w["title"], 26, INK)
-        rw = FACES["ita"].width(w["repo"], 15.5)
-        d.text("ita", W - 64, y_title, w["repo"], 15.5, INK2, "end")
-        leader(d, 64 + FACES["rom"].width(w["title"], 26) + 12, W - 64 - rw - 12, y_title - 5)
+        d.text("rom", 64, y_title, w["title"], 28, INK)
+        label = w["repo"] + "  \u2197"
+        rw = FACES["ita"].width(label, 16.5)
+        d.text("ita", W - 64, y_title, label, 16.5, OX, "end")
+        leader(d, 64 + FACES["rom"].width(w["title"], 28) + 12, W - 64 - rw - 12, y_title - 5)
         for i, ln in enumerate(lines):
-            d.text("ita", 64, y_desc + 22 * i, ln, 16.5, INK2)
-        d.text("rom", 64, y_tags, tags, 13, OX, tracking=2.4, cls="sc")
+            d.text("ita", 64, y_desc + 24 * i, ln, 18, INK2)
+        d.text("rom", 64, y_tags, tags, 14, OX, tracking=2.4, cls="sc")
         if w is not WORK[-1]:
             d.add(f'<path d="M64 {h-.5}H{W-64}" stroke="{RULE}" stroke-width="1"/>')
         d.save(w["file"] + ".svg")
@@ -285,7 +291,7 @@ def instruments():
         cells = []
         for c in range(2):
             name, items = groups[r * 2 + c]
-            cells.append((X1 if c == 0 else X2, name, wrap("rom", items, 17.5, CW)))
+            cells.append((X1 if c == 0 else X2, name, wrap("rom", items, 18.5, CW)))
         rh = 26 + 24 * max(len(c[2]) for c in cells)
         placed.append((y, cells))
         y += rh + 14
@@ -296,9 +302,9 @@ def instruments():
     d.add(f'<path d="M{W/2} 112V{h-24}" stroke="{RULE}"/>')
     for y, cells in placed:
         for x, name, lines in cells:
-            d.text("rom", x, y, name, 13.5, OX, tracking=2.6, cls="sc")
+            d.text("rom", x, y, name, 14, OX, tracking=2.6, cls="sc")
             for i, ln in enumerate(lines):
-                d.text("rom", x, y + 26 + 24 * i, ln, 17.5, INK)
+                d.text("rom", x, y + 26 + 24 * i, ln, 18.5, INK)
     d.save("instruments.svg")
 
 
@@ -320,6 +326,39 @@ def correspondence():
     d.save("correspondence.svg")
 
 
+class Tab(Doc):
+    """A small clickable paper tab: its own double-rule frame, transparent margin around it."""
+
+    def __init__(self, w, h, title, desc):
+        super().__init__(h, title, desc)
+        self.w = w
+
+    def render(self):
+        w, h = self.w, self.h
+        grain = ('<filter id="g" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">'
+                 '<feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="5"/>'
+                 '<feColorMatrix values="0 0 0 0 .30  0 0 0 0 .24  0 0 0 0 .14  1.2 0 0 0 -.45"/></filter>')
+        css = "text{font-variant-numeric:lining-nums}.sc{font-variant-caps:all-small-caps}"
+        return (
+            f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="t d">\n'
+            f'<title id="t">{esc(self.title)}</title>\n<desc id="d">{esc(self.desc)}</desc>\n<defs>{grain}</defs>\n'
+            f"<style>{self.font_faces()}{css}</style>\n"
+            f'<rect x="4" y="4" width="{w-8}" height="{h-8}" fill="{PAPER}"/><rect x="4" y="4" width="{w-8}" height="{h-8}" filter="url(#g)" opacity=".2"/>\n'
+            f'<rect x="4.5" y="4.5" width="{w-9}" height="{h-9}" fill="none" stroke="{INK}" stroke-width="1.2"/>'
+            f'<rect x="8.5" y="8.5" width="{w-17}" height="{h-17}" fill="none" stroke="{INK}" stroke-width=".5"/>\n'
+            + "\n".join(self.body) + "\n</svg>\n"
+        )
+
+
+def tabs():
+    for fname, label, what in (("tab-website", "Website", "aykanugur.com"), ("tab-linkedin", "LinkedIn", "linkedin.com/in/aykanugur"),
+                               ("tab-email", "Email", "aykanugur157@gmail.com"), ("tab-repos", "Repositories", "all public repositories on GitHub")):
+        w = int(FACES["rom"].width(label.upper(), 14.5, 3.4) * .82 + 78)
+        d = Tab(w, 46, f"{label}", f"Link: {label}, {what}.")
+        d.rich("rom", w / 2 - 6, 29.5, [(label, INK), ("  \u2197", OX)], 14.5, cls="sc", tracking=3.4)
+        d.save(fname + ".svg")
+
+
 def generic_fonts():
     """Basic-Latin subsets committed to assets/fonts/, embedded by scripts/stats.py (which has no fontTools)."""
     fdir = OUT / "fonts"
@@ -338,3 +377,4 @@ if __name__ == "__main__":
     works()
     instruments()
     correspondence()
+    tabs()
