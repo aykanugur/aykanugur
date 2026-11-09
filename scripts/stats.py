@@ -7,7 +7,7 @@ Runs in CI (.github/workflows/update-profile.yml); standard library only.
 
 Metric choice: bytes-per-language is dominated by generated files (for example
 Unity shader code), so the chart counts the *primary language of each public,
-non-fork repository* instead.
+non-fork repository* instead (the profile repo itself is excluded).
 """
 import base64
 import datetime
@@ -78,7 +78,8 @@ def text(x, y, s, family, size, fill, anchor="start", tracking=0):
 
 
 def render(user, repos, contributions):
-    own = [r for r in repos if not r["fork"]]
+    # forks are not my work; the profile repo itself only holds this tooling
+    own = [r for r in repos if not r["fork"] and r["name"].lower() != OWNER.lower()]
     langs = Counter(r["language"] for r in own if r["language"])
     n = sum(langs.values())
     ranked = langs.most_common()
