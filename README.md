@@ -1,37 +1,61 @@
-
-<h1 align="center">Hi 👋, I'm Aykan Uğur</h1>
-<h3 align="center">A passionate developer from Izmir,Turkey</h3>
-
-## 💼 Professional Background
-
-```yaml
-Company: İzmir Ekonomi üniversitesi
-Position: Undergraduate Assistant
-Focus: Teaching
-Status: Working - but looking for job. 
-```
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=aykanugur&label=Profile%20views&color=0e75b6&style=flat" alt="aykanugur" /> </p>
+<img src="assets/banner.svg" alt="Aykan Uğur. I build language models. Based in İzmir, Turkey, open to work." width="100%">
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70F0F&center=true&vCenter=true&width=435&lines=NLP;ML;Undergraduate+Assistant" alt="Typing SVG" />
+  <a href="https://www.aykanugur.com">Website</a> &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/aykanugur/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:aykanugur157@gmail.com">Email</a> &nbsp;·&nbsp;
+  <a href="https://github.com/aykanugur?tab=repositories">All repositories</a>
 </p>
 
-- 🔭 I’m currently working on **AykanLLM1.3B**
+Merhaba. I'm a developer in İzmir who builds language models, and I help teach the next batch of students as an undergraduate assistant.
 
-- 👯 I’m looking to collaborate on **NLM**
+<img src="assets/about.svg" alt="aykan.py: Aykan Uğur, from İzmir, Turkey. Undergraduate Assistant at İzmir University of Economics. Focus on LLMs, NLP, machine learning and teaching. Building AykanLLM-1.3B, studying a GPT from scratch via the NeetCode ML course, exploring Turkish NLP. Looking for a job and collaborators on LLMs and NLP. Reach me at aykanugur157@gmail.com." width="100%">
 
-- 👨‍💻 All of my projects are available at (In my Profile (not private ones lol))
+## Selected work
 
-- 📫 How to reach me **aykanugur157@gmail.com**
+<a href="https://github.com/aykanugur/neetcode-gpt"><img src="assets/work-gpt.svg" alt="GPT from scratch (neetcode-gpt). BPE tokenizer, multi-head and grouped-query attention, KV-cache and a full transformer, assembled from my NeetCode ML course submissions. Python, PyTorch." width="100%"></a>
+<a href="https://github.com/aykanugur/bhts"><img src="assets/work-bhts.svg" alt="BHTS Air Tracking (bhts and bhts-api). Balıkesir Hava Takip Sistemi, an air-tracking system with an ASP.NET Core backend using MessagePack over SignalR, and a React frontend." width="100%"></a>
+<a href="https://github.com/aykanugur/innovatepam-portal"><img src="assets/work-innovatepam.svg" alt="InnovatEPAM Portal (innovatepam-portal). An internal innovation platform with a multi-stage review pipeline and analytics. Next.js, TypeScript, Prisma, PostgreSQL." width="100%"></a>
+<a href="https://github.com/aykanugur/Taylanator-Question-ML-GAME"><img src="assets/work-taylanator.svg" alt="Taylanator. An Akinator-style guessing game that uses machine learning to predict what you are thinking of. Python." width="100%"></a>
+<a href="https://github.com/aykanugur/Earthquake-Database-For-Turkey"><img src="assets/work-quake.svg" alt="Earthquakes of Turkey. A hobby app to browse, sort and filter Turkey's earthquakes by city. Python." width="100%"></a>
+<a href="https://github.com/aykanugur/German-Vocabulary-Quiz-App-TR"><img src="assets/work-german.svg" alt="German Vocabulary Quiz. A vocabulary quiz app for learning German, built for Turkish speakers. Python." width="100%"></a>
 
-- ⚡ Fun fact **I worked in Summer Camp XD (2 times)**
+<details>
+<summary>More from the lab</summary>
+<br>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/aykan uğur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="aykan uğur" height="30" width="40" /></a>
+- [bhts-api](https://github.com/aykanugur/bhts-api): the ASP.NET Core backend behind BHTS
+- [AlliedAgent](https://github.com/aykanugur/AlliedAgent): SE320 game project
+- [House_Prices_ML](https://github.com/aykanugur/House_Prices_ML), [Titanic_Survive_ML](https://github.com/aykanugur/Titanic_Survive_ML), [Spaceship-Titanic](https://github.com/aykanugur/Spaceship-Titanic): classic ML practice
+- [neetcode-submissions](https://github.com/aykanugur/neetcode-submissions): my NeetCode.io solutions in C#
+- [OfficeSim](https://github.com/aykanugur/OfficeSim), [SE115-BlueJack](https://github.com/aykanugur/SE115-BlueJack): Java projects
+- [awesome-turkish-language-models](https://github.com/aykanugur/awesome-turkish-language-models), [turkish-nlp-resources](https://github.com/aykanugur/turkish-nlp-resources): Turkish NLP bookmarks
+- [llm-from-scratch](https://github.com/aykanugur/llm-from-scratch): following along with *Build Your Own LLM from Scratch*
+
+</details>
+
+## Stack
+
+<img src="assets/stack.svg" alt="Tech stack. AI and ML: Python, PyTorch, TensorFlow, scikit-learn, MATLAB. Languages: C#, Java, C, C++, TypeScript, JavaScript. Backend and data: .NET, ASP.NET Core, SignalR, PostgreSQL, MySQL, Firebase, Prisma. Frontend and mobile: React, Next.js, Tailwind CSS, Flutter, Android. Games and creative: Unity, Unreal Engine, Blender, Figma, Arduino. Tooling: Git, GitHub Actions, Docker, Linux, VS Code, PyCharm, Rider." width="100%">
+
+## Activity
+
+<img src="https://raw.githubusercontent.com/aykanugur/aykanugur/output/stats.svg" alt="GitHub stats, refreshed twice a day: public repositories, contributions in the last 12 months, member since 2023, and the primary language of each public non-fork repository." width="100%">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aykanugur/aykanugur/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aykanugur/aykanugur/output/github-snake.svg">
+  <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/aykanugur/aykanugur/output/github-snake.svg" width="100%">
+</picture>
+
+## Contact
+
+<img src="assets/contact.svg" alt="Let's build something. Open to work, based in İzmir, Turkey. aykanugur157@gmail.com, aykanugur.com, linkedin.com/in/aykanugur." width="100%">
+
+<p align="center">
+  <a href="mailto:aykanugur157@gmail.com"><b>Email</b></a> &nbsp;·&nbsp;
+  <a href="https://www.aykanugur.com"><b>Website</b></a> &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/aykanugur/"><b>LinkedIn</b></a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> </p>
-
-
+<p align="center"><sub>Set in Instrument Serif, Instrument Sans and JetBrains Mono (SIL OFL). Panels are generated: see <a href="scripts">scripts</a>.</sub></p>
