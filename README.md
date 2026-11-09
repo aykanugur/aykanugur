@@ -1,5 +1,3 @@
-<img src="assets/banner.svg" alt="Aykan Uğur. I build language models. Based in İzmir, Turkey, open to work." width="100%">
-
 <p align="center">
   <a href="https://www.aykanugur.com">Website</a> &nbsp;·&nbsp;
   <a href="https://linkedin.com/in/aykanugur/">LinkedIn</a> &nbsp;·&nbsp;
@@ -7,21 +5,21 @@
   <a href="https://github.com/aykanugur?tab=repositories">All repositories</a>
 </p>
 
-Merhaba. I'm a developer in İzmir who builds language models, and I help teach the next batch of students as an undergraduate assistant.
-
-<img src="assets/about.svg" alt="aykan.py: Aykan Uğur, from İzmir, Turkey. Undergraduate Assistant at İzmir University of Economics. Focus on LLMs, NLP, machine learning and teaching. Building AykanLLM-1.3B, studying a GPT from scratch via the NeetCode ML course, exploring Turkish NLP. Looking for a job and collaborators on LLMs and NLP. Reach me at aykanugur157@gmail.com." width="100%">
-
-## Selected work
-
-<a href="https://github.com/aykanugur/neetcode-gpt"><img src="assets/work-gpt.svg" alt="GPT from scratch (neetcode-gpt). BPE tokenizer, multi-head and grouped-query attention, KV-cache and a full transformer, assembled from my NeetCode ML course submissions. Python, PyTorch." width="100%"></a>
-<a href="https://github.com/aykanugur/bhts"><img src="assets/work-bhts.svg" alt="BHTS Air Tracking (bhts and bhts-api). Balıkesir Hava Takip Sistemi, an air-tracking system with an ASP.NET Core backend using MessagePack over SignalR, and a React frontend." width="100%"></a>
-<a href="https://github.com/aykanugur/innovatepam-portal"><img src="assets/work-innovatepam.svg" alt="InnovatEPAM Portal (innovatepam-portal). An internal innovation platform with a multi-stage review pipeline and analytics. Next.js, TypeScript, Prisma, PostgreSQL." width="100%"></a>
-<a href="https://github.com/aykanugur/Taylanator-Question-ML-GAME"><img src="assets/work-taylanator.svg" alt="Taylanator. An Akinator-style guessing game that uses machine learning to predict what you are thinking of. Python." width="100%"></a>
-<a href="https://github.com/aykanugur/Earthquake-Database-For-Turkey"><img src="assets/work-quake.svg" alt="Earthquakes of Turkey. A hobby app to browse, sort and filter Turkey's earthquakes by city. Python." width="100%"></a>
-<a href="https://github.com/aykanugur/German-Vocabulary-Quiz-App-TR"><img src="assets/work-german.svg" alt="German Vocabulary Quiz. A vocabulary quiz app for learning German, built for Turkish speakers. Python." width="100%"></a>
+<img align="top" src="assets/title.svg" alt="Aykan Uğur. I build language models. Natural language processing, machine learning, Turkish AI. İzmir, Turkey. Open to work." width="100%"><br>
+<img align="top" src="assets/particulars.svg" alt="Particulars. Aykan Uğur, resident in İzmir, Turkey. Undergraduate Assistant at İzmir University of Economics. Concerned with language models, NLP, machine learning and teaching. In hand: AykanLLM-1.3B. Studying a GPT from scratch by way of the NeetCode ML course. Exploring Turkish NLP. Seeking a position, and collaborators on LLMs and NLP. Has worked at a summer camp, twice. Correspondence: aykanugur157@gmail.com." width="100%"><br>
+<img align="top" src="assets/works-head.svg" alt="Selected works. Six projects; each entry opens its repository." width="100%"><br>
+<a href="https://github.com/aykanugur/neetcode-gpt"><img align="top" src="assets/work-gpt.svg" alt="GPT from scratch (neetcode-gpt). A tokenizer, multi-head and grouped-query attention, a KV-cache and a full transformer, assembled from my NeetCode ML course submissions. Python, PyTorch." width="100%"></a><br>
+<a href="https://github.com/aykanugur/bhts"><img align="top" src="assets/work-bhts.svg" alt="BHTS Air Tracking (bhts and bhts-api). Balıkesir Hava Takip Sistemi, an air-tracking system with an ASP.NET Core backend, MessagePack over SignalR, and a React frontend. C#, ASP.NET Core, React, SignalR." width="100%"></a><br>
+<a href="https://github.com/aykanugur/innovatepam-portal"><img align="top" src="assets/work-innovatepam.svg" alt="InnovatEPAM Portal (innovatepam-portal). An internal innovation platform with a multi-stage review pipeline and analytics. Next.js, TypeScript, Prisma, PostgreSQL." width="100%"></a><br>
+<a href="https://github.com/aykanugur/Taylanator-Question-ML-GAME"><img align="top" src="assets/work-taylanator.svg" alt="Taylanator. An Akinator-style guessing game that uses machine learning to work out what you have in mind. Python." width="100%"></a><br>
+<a href="https://github.com/aykanugur/Earthquake-Database-For-Turkey"><img align="top" src="assets/work-quake.svg" alt="Earthquakes of Turkey. A hobby app to browse, sort and filter Turkey's earthquakes by city. Python." width="100%"></a><br>
+<a href="https://github.com/aykanugur/German-Vocabulary-Quiz-App-TR"><img align="top" src="assets/work-german.svg" alt="German Vocabulary Quiz. A vocabulary quiz for learning German, made for Turkish speakers. Python." width="100%"></a><br>
+<img align="top" src="assets/instruments.svg" alt="Instruments. AI and machine learning: Python, PyTorch, TensorFlow, scikit-learn, MATLAB. Languages: C#, Java, C, C++, TypeScript, JavaScript. Backend and data: .NET, ASP.NET Core, SignalR, PostgreSQL, MySQL, Firebase, Prisma. Frontend and mobile: React, Next.js, Tailwind CSS, Flutter, Android. Games and design: Unity, Unreal Engine, Blender, Figma, Arduino. Workshop: Git, GitHub Actions, Docker, Linux, VS Code, PyCharm, Rider." width="100%"><br>
+<img align="top" src="https://raw.githubusercontent.com/aykanugur/aykanugur/output/stats.svg" alt="The record, revised twice a day: public repositories, contributions in the past year, member of GitHub since 2023, primary language of each public repository, and a calendar of daily contributions." width="100%"><br>
+<img align="top" src="assets/correspondence.svg" alt="Correspondence. I am at present seeking a position, and should be glad to hear from anyone building with language models. Yours sincerely, Aykan Uğur. aykanugur157@gmail.com, aykanugur.com, linkedin.com/in/aykanugur." width="100%">
 
 <details>
-<summary>More from the lab</summary>
+<summary>Other repositories</summary>
 <br>
 
 - [bhts-api](https://github.com/aykanugur/bhts-api): the ASP.NET Core backend behind BHTS
@@ -34,28 +32,4 @@ Merhaba. I'm a developer in İzmir who builds language models, and I help teach 
 
 </details>
 
-## Stack
-
-<img src="assets/stack.svg" alt="Tech stack. AI and ML: Python, PyTorch, TensorFlow, scikit-learn, MATLAB. Languages: C#, Java, C, C++, TypeScript, JavaScript. Backend and data: .NET, ASP.NET Core, SignalR, PostgreSQL, MySQL, Firebase, Prisma. Frontend and mobile: React, Next.js, Tailwind CSS, Flutter, Android. Games and creative: Unity, Unreal Engine, Blender, Figma, Arduino. Tooling: Git, GitHub Actions, Docker, Linux, VS Code, PyCharm, Rider." width="100%">
-
-## Activity
-
-<img src="https://raw.githubusercontent.com/aykanugur/aykanugur/output/stats.svg" alt="GitHub stats, refreshed twice a day: public repositories, contributions in the last 12 months, member since 2023, and the primary language of each public non-fork repository." width="100%">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aykanugur/aykanugur/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aykanugur/aykanugur/output/github-snake.svg">
-  <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/aykanugur/aykanugur/output/github-snake.svg" width="100%">
-</picture>
-
-## Contact
-
-<img src="assets/contact.svg" alt="Let's build something. Open to work, based in İzmir, Turkey. aykanugur157@gmail.com, aykanugur.com, linkedin.com/in/aykanugur." width="100%">
-
-<p align="center">
-  <a href="mailto:aykanugur157@gmail.com"><b>Email</b></a> &nbsp;·&nbsp;
-  <a href="https://www.aykanugur.com"><b>Website</b></a> &nbsp;·&nbsp;
-  <a href="https://linkedin.com/in/aykanugur/"><b>LinkedIn</b></a>
-</p>
-
-<p align="center"><sub>Set in Instrument Serif, Instrument Sans and JetBrains Mono (SIL OFL). Panels are generated: see <a href="scripts">scripts</a>.</sub></p>
+<p align="center"><sub>Typeset in EB Garamond (SIL OFL). The pages are generated: see <a href="scripts">scripts</a>.</sub></p>
